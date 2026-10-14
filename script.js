@@ -1,9 +1,11 @@
 
 function firstChar(text) {
-    return text.trim().charAt(0);
-}
+    let trimmedText = text.trim();
 
-// Uncomment the following line to show the prompt popup
-// const text = prompt("Enter text:");
-alert(firstChar(text));
+    if (trimmedText.length === 0) {
+        return "";
+    }
+
+    return trimmedText.charAt(0);
+}
 
